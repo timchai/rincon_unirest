@@ -1,0 +1,13 @@
+<table>
+  <tr>
+    <th>Landuse:</th>
+    <th>Description:</th>
+  </tr>
+
+<% @rincons.each do |rincon| %>
+  <tr>
+    <td><%= rincon["landuse"] %></td>
+    <td><%= rincon["planning_project_description"] %></td>
+  </tr> 
+<% end %>
+</table>
